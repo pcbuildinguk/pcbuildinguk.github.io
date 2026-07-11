@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium custom PC building services by Dane and George">
+    <meta name="keywords" content="custom PC, gaming PC, PC building, computer build">
+    <title>PC Building | Premium Custom Builds</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-logo">
+                <span class="loader-text">PC</span>
+            </div>
+            <div class="loader-bar">
+                <div class="loader-progress" id="loader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress" id="scroll-progress"></div>
+
+    <!-- Navigation -->
+    <header class="nav" id="nav">
+        <nav class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-icon">⬡</span>
+                <span class="logo-text">PC<span class="logo-accent">BUILDER</span></span>
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#process" class="nav-link">Process</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+                <li><a href="#faq" class="nav-link">FAQ</a></li>
+                <li><a href="#contact" class="nav-link nav-cta">Get Started</a></li>
+            </ul>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <ul class="mobile-links">
+            <li><a href="#services" class="mobile-link">Services</a></li>
+            <li><a href="#process" class="mobile-link">Process</a></li>
+            <li><a href="#gallery" class="mobile-link">Gallery</a></li>
+            <li><a href="#testimonials" class="mobile-link">Reviews</a></li>
+            <li><a href="#faq" class="mobile-link">FAQ</a></li>
+            <li><a href="#contact" class="mobile-link mobile-cta">Get Started</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+            <div class="hero-grid"></div>
+            <div class="hero-glow"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge reveal">
+                <span class="badge-dot"></span>
+                <span>Premium PC Building Services</span>
+            </div>
+            <h1 class="hero-title reveal">
+                <span class="title-line">Build Your</span>
+                <span class="title-line title-accent">Dream PC</span>
+            </h1>
+            <p class="hero-subtitle reveal">
+                Lorem ipsum dolor sit amet consectetur adipiscing elit.
+                Custom builds crafted with precision and passion.
+            </p>
+            <div class="hero-actions reveal">
+                <a href="#contact" class="btn btn-primary">
+                    <span>Start Your Build</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+                <a href="#gallery" class="btn btn-secondary">
+                    <span>View Gallery</span>
+                </a>
+            </div>
+            <div class="hero-stats reveal">
+                <div class="stat">
+                    <span class="stat-number" data-target="0">0</span>
+                    <span class="stat-label">Builds Completed</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-target="0">0</span><span class="stat-suffix">%</span>
+                    <span class="stat-label">Satisfaction</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-target="0">0</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="pc-mockup reveal">
+                <div class="pc-frame">
+                    <div class="pc-screen">
+                        <div class="pc-content">
+                            <div class="pc-specs">
+                                <div class="spec-item">
+                                    <span class="spec-label">CPU</span>
+                                    <span class="spec-value">Intel i9-14900K</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">GPU</span>
+                                    <span class="spec-value">RTX 4090</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">RAM</span>
+                                    <span class="spec-value">64GB DDR5</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Storage</span>
+                                    <span class="spec-value">2TB NVMe</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pc-stand"></div>
+                </div>
+                <div class="pc-glow"></div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll to explore</span>
+            <div class="scroll-indicator">
+                <div class="scroll-dot"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">What We Offer</span>
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2"/>
+                            <path d="M8 21h8M12 17v4"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Custom Gaming PCs</h3>
+                    <p class="service-desc">Lorem ipsum dolor sit amet consectetur adipiscing elit. Maxime molestias accusamus quas.</p>
+                    <a href="#contact" class="service-link">
+                        <span>Learn More</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                            <path d="M2 17l10 5 10-5"/>
+                            <path d="M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Workstation Builds</h3>
+                    <p class="service-desc">Lorem ipsum dolor sit amet consectetur adipiscing elit. Maxime molestias accusamus quas.</p>
+                    <a href="#contact" class="service-link">
+                        <span>Learn More</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="3"/>
+                            <path d="M12 1v6m0 6v10"/>
+                            <path d="M21 12h-6m-6 0H1"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Custom Cooling</h3>
+                    <p class="service-desc">Lorem ipsum dolor sit amet consectetur adipiscing elit. Maxime molestias accusamus quas.</p>
+                    <a href="#contact" class="service-link">
+                        <span>Learn More</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Cable Management</h3>
+                    <p class="service-desc">Lorem ipsum dolor sit amet consectetur adipiscing elit. Maxime molestias accusamus quas.</p>
+                    <a href="#contact" class="service-link">
+                        <span>Learn More</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Upgrades & Repairs</h3>
+                    <p class="service-desc">Lorem ipsum dolor sit amet consectetur adipiscing elit. Maxime molestias accusamus quas.</p>
+                    <a href="#contact" class="service-link">
+                        <span>Learn More</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Consultation</h3>
+                    <p class="service-desc">Lorem ipsum dolor sit amet consectetur adipiscing elit. Maxime molestias accusamus quas.</p>
+                    <a href="#contact" class="service-link">
+                        <span>Learn More</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process" id="process">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">How It Works</span>
+                <h2 class="section-title">Our Process</h2>
+                <p class="section-subtitle">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod.</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-line"></div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker">
+                        <span class="marker-number">01</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Consultation</h3>
+                        <p class="timeline-desc">Lorem ipsum dolor sit amet consectetur adipiscing elit. Aspernatur optio animi minima commodi culpa qui totam.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker">
+                        <span class="marker-number">02</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Design & Plan</h3>
+                        <p class="timeline-desc">Lorem ipsum dolor sit amet consectetur adipiscing elit. Aspernatur optio animi minima commodi culpa qui totam.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker">
+                        <span class="marker-number">03</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Build & Test</h3>
+                        <p class="timeline-desc">Lorem ipsum dolor sit amet consectetur adipiscing elit. Aspernatur optio animi minima commodi culpa qui totam.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker">
+                        <span class="marker-number">04</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Delivery</h3>
+                        <p class="timeline-desc">Lorem ipsum dolor sit amet consectetur adipiscing elit. Aspernatur optio animi minima commodi culpa qui totam.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-us" id="why-us">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Why Us</span>
+                <h2 class="section-title">Why Choose Us</h2>
+                <p class="section-subtitle">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod.</p>
+            </div>
+            <div class="why-grid">
+                <div class="why-card reveal">
+                    <div class="why-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
+                    <h3 class="why-title">Quality Guarantee</h3>
+                    <p class="why-desc">Lorem ipsum dolor sit amet consectetur adipiscing elit. Voluptatum inventore magnam quos.</p>
+                </div>
+                <div class="why-card reveal">
+                    <div class="why-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                    </div>
+                    <h3 class="why-title">Fast Turnaround</h3>
+                    <p class="why-desc">Lorem ipsum dolor sit amet consectetur adipiscing elit. Voluptatum inventore magnam quos.</p>
+                </div>
+                <div class="why-card reveal">
+                    <div class="why-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 00-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 010 7.75"/>
+                        </svg>
+                    </div>
+                    <h3 class="why-title">Expert Team</h3>
+                    <p class="why-desc">Lorem ipsum dolor sit amet consectetur adipiscing elit. Voluptatum inventore magnam quos.</p>
+                </div>
+                <div class="why-card reveal">
+                    <div class="why-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="12" y1="1" x2="12" y2="23"/>
+                            <path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/>
+                        </svg>
+                    </div>
+                    <h3 class="why-title">Best Pricing</h3>
+                    <p class="why-desc">Lorem ipsum dolor sit amet consectetur adipiscing elit. Voluptatum inventore magnam quos.</p>
+                </div>
+                <div class="why-card reveal">
+                    <div class="why-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/>
+                        </svg>
+                    </div>
+                    <h3 class="why-title">Lifetime Support</h3>
+                    <p class="why-desc">Lorem ipsum dolor sit amet consectetur adipiscing elit. Voluptatum inventore magnam quos.</p>
+                </div>
+                <div class="why-card reveal">
+                    <div class="why-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                        </svg>
+                    </div>
+                    <h3 class="why-title">Warranty</h3>
+                    <p class="why-desc">Lorem ipsum dolor sit amet consectetur adipiscing elit. Voluptatum inventore magnam quos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Portfolio</span>
+                <h2 class="section-title">Build Gallery</h2>
+                <p class="section-subtitle">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item reveal">
+                    <div class="gallery-image">
+                        <div class="gallery-placeholder">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="2" y="3" width="20" height="14" rx="2"/>
+                                <path d="M8 21h8M12 17v4"/>
+                            </svg>
+                        </div>
+                        <div class="gallery-overlay">
+                            <span class="gallery-tag">Gaming</span>
+                            <h4 class="gallery-name">Build Name</h4>
+                            <p class="gallery-specs">Lorem ipsum</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item reveal">
+                    <div class="gallery-image">
+                        <div class="gallery-placeholder">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="2" y="3" width="20" height="14" rx="2"/>
+                                <path d="M8 21h8M12 17v4"/>
+                            </svg>
+                        </div>
+                        <div class="gallery-overlay">
+                            <span class="gallery-tag">Workstation</span>
+                            <h4 class="gallery-name">Build Name</h4>
+                            <p class="gallery-specs">Lorem ipsum</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item reveal">
+                    <div class="gallery-image">
+                        <div class="gallery-placeholder">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="2" y="3" width="20" height="14" rx="2"/>
+                                <path d="M8 21h8M12 17v4"/>
+                            </svg>
+                        </div>
+                        <div class="gallery-overlay">
+                            <span class="gallery-tag">Streaming</span>
+                            <h4 class="gallery-name">Build Name</h4>
+                            <p class="gallery-specs">Lorem ipsum</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item reveal">
+                    <div class="gallery-image">
+                        <div class="gallery-placeholder">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="2" y="3" width="20" height="14" rx="2"/>
+                                <path d="M8 21h8M12 17v4"/>
+                            </svg>
+                        </div>
+                        <div class="gallery-overlay">
+                            <span class="gallery-tag">Custom</span>
+                            <h4 class="gallery-name">Build Name</h4>
+                            <p class="gallery-specs">Lorem ipsum</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item reveal">
+                    <div class="gallery-image">
+                        <div class="gallery-placeholder">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="2" y="3" width="20" height="14" rx="2"/>
+                                <path d="M8 21h8M12 17v4"/>
+                            </svg>
+                        </div>
+                        <div class="gallery-overlay">
+                            <span class="gallery-tag">Gaming</span>
+                            <h4 class="gallery-name">Build Name</h4>
+                            <p class="gallery-specs">Lorem ipsum</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item reveal">
+                    <div class="gallery-image">
+                        <div class="gallery-placeholder">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="2" y="3" width="20" height="14" rx="2"/>
+                                <path d="M8 21h8M12 17v4"/>
+                            </svg>
+                        </div>
+                        <div class="gallery-overlay">
+                            <span class="gallery-tag">Mini ITX</span>
+                            <h4 class="gallery-name">Build Name</h4>
+                            <p class="gallery-specs">Lorem ipsum</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats" id="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card reveal">
+                    <div class="stat-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                            <path d="M2 17l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <div class="stat-number" data-target="0">0</div>
+                    <div class="stat-text">Builds Completed</div>
+                </div>
+                <div class="stat-card reveal">
+                    <div class="stat-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/>
+                        </svg>
+                    </div>
+                    <div class="stat-number" data-target="0">0</div>
+                    <div class="stat-text">Parts Installed</div>
+                </div>
+                <div class="stat-card reveal">
+                    <div class="stat-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
+                            <line x1="9" y1="9" x2="9.01" y2="9"/>
+                            <line x1="15" y1="9" x2="15.01" y2="9"/>
+                        </svg>
+                    </div>
+                    <div class="stat-number" data-target="0">0</div>
+                    <div class="stat-suffix">%</div>
+                    <div class="stat-text">Happy Clients</div>
+                </div>
+                <div class="stat-card reveal">
+                    <div class="stat-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                        </svg>
+                    </div>
+                    <div class="stat-number" data-target="0">0</div>
+                    <div class="stat-text">Years Experience</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Testimonials</span>
+                <h2 class="section-title">What Clients Say</h2>
+                <p class="section-subtitle">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod.</p>
+            </div>
+            <div class="testimonial-slider">
+                <div class="testimonial-track" id="testimonial-track">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                        </div>
+                        <p class="testimonial-text">"Lorem ipsum dolor sit amet consectetur adipiscing elit. Fugit quia rem sequi incidunt."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <span>JD</span>
+                            </div>
+                            <div class="author-info">
+                                <h4 class="author-name">John Doe</h4>
+                                <p class="author-role">Gaming Enthusiast</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                        </div>
+                        <p class="testimonial-text">"Lorem ipsum dolor sit amet consectetur adipiscing elit. Fugit quia rem sequi incidunt."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <span>JS</span>
+                            </div>
+                            <div class="author-info">
+                                <h4 class="author-name">Jane Smith</h4>
+                                <p class="author-role">Video Editor</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                        </div>
+                        <p class="testimonial-text">"Lorem ipsum dolor sit amet consectetur adipiscing elit. Fugit quia rem sequi incidunt."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <span>MW</span>
+                            </div>
+                            <div class="author-info">
+                                <h4 class="author-name">Mike Wilson</h4>
+                                <p class="author-role">Software Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                        </div>
+                        <p class="testimonial-text">"Lorem ipsum dolor sit amet consectetur adipiscing elit. Fugit quia rem sequi incidunt."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <span>SA</span>
+                            </div>
+                            <div class="author-info">
+                                <h4 class="author-name">Sarah Anderson</h4>
+                                <p class="author-role">Streamer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-nav">
+                    <button class="testimonial-btn prev" id="testimonial-prev">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M15 18l-6-6 6-6"/>
+                        </svg>
+                    </button>
+                    <button class="testimonial-btn next" id="testimonial-next">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 18l6-6-6-6"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="testimonial-dots" id="testimonial-dots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">FAQ</span>
+                <h2 class="section-title">Common Questions</h2>
+                <p class="section-subtitle">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod.</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item reveal">
+                    <button class="faq-question">
+                        <span>How long does a custom PC build take?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 5v14M5 12h14"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Maxime, corrupti? Repudiandae doloribus illo maiores nulla eaque.</p>
+                    </div>
+                </div>
+                <div class="faq-item reveal">
+                    <button class="faq-question">
+                        <span>Do you offer warranty on builds?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 5v14M5 12h14"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Maxime, corrupti? Repudiandae doloribus illo maiores nulla eaque.</p>
+                    </div>
+                </div>
+                <div class="faq-item reveal">
+                    <button class="faq-question">
+                        <span>Can I supply my own parts?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 5v14M5 12h14"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Maxime, corrupti? Repudiandae doloribus illo maiores nulla eaque.</p>
+                    </div>
+                </div>
+                <div class="faq-item reveal">
+                    <button class="faq-question">
+                        <span>Do you offer custom water cooling?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 5v14M5 12h14"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Maxime, corrupti? Repudiandae doloribus illo maiores nulla eaque.</p>
+                    </div>
+                </div>
+                <div class="faq-item reveal">
+                    <button class="faq-question">
+                        <span>What payment methods do you accept?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 5v14M5 12h14"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Maxime, corrupti? Repudiandae doloribus illo maiores nulla eaque.</p>
+                    </div>
+                </div>
+                <div class="faq-item reveal">
+                    <button class="faq-question">
+                        <span>Do you ship internationally?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 5v14M5 12h14"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Maxime, corrupti? Repudiandae doloribus illo maiores nulla eaque.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info reveal">
+                    <span class="section-tag">Get In Touch</span>
+                    <h2 class="section-title">Let's Build Together</h2>
+                    <p class="contact-desc">Lorem ipsum dolor sit amet consectetur adipiscing elit. Maxime molestias accusamus quas.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="contact-label">Email</span>
+                                <span class="contact-value">hello@pcbuild.com</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="contact-label">Phone</span>
+                                <span class="contact-value">+44 123 456 7890</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="contact-label">Location</span>
+                                <span class="contact-value">London, UK</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5"/>
+                                <circle cx="12" cy="12" r="4"/>
+                                <circle cx="18" cy="6" r="1"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.33z"/>
+                                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Discord">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.317 4.37a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 00-5.487 0 12.64 12.64 0 00-.617-1.25.077.077 0 00-.079-.037A19.736 19.736 0 003.677 4.37a.07.07 0 00-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 00.031.057 19.9 19.9 0 005.993 3.03.078.078 0 00.084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 00-.041-.106 13.107 13.107 0 01-1.872-.892.077.077 0 01-.008-.128 10.2 10.2 0 00.372-.292.074.074 0 01.077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 01.078.01c.12.098.246.198.373.292a.077.077 0 01-.006.127 12.299 12.299 0 01-1.873.892.077.077 0 00-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 00.084.028 19.839 19.839 0 006.002-3.03.077.077 0 00.032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 00-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form reveal" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Build inquiry">
+                    </div>
+                    <div class="form-group">
+                        <label for="budget">Budget Range</label>
+                        <select id="budget" name="budget">
+                            <option value="">Select budget</option>
+                            <option value="1000-2000">£1,000 - £2,000</option>
+                            <option value="2000-3000">£2,000 - £3,000</option>
+                            <option value="3000-5000">£3,000 - £5,000</option>
+                            <option value="5000+">£5,000+</option>
+                        </select>
+                    </div>
+                    <div class="form-group form-group-full">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell us about your dream build..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <span>Send Message</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">
+                        <span class="logo-icon">⬡</span>
+                        <span class="logo-text">PC<span class="logo-accent">BUILDER</span></span>
+                    </a>
+                    <p class="footer-tagline">Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 class="footer-heading">Navigation</h4>
+                        <ul>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#process">Process</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-heading">Services</h4>
+                        <ul>
+                            <li><a href="#">Custom Builds</a></li>
+                            <li><a href="#">Upgrades</a></li>
+                            <li><a href="#">Repairs</a></li>
+                            <li><a href="#">Consultation</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-heading">Legal</h4>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Cookie Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2024 PC Builder. All rights reserved.</p>
+                <p class="credits">Crafted with precision by Dane & George</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 15l-6-6-6 6"/>
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
